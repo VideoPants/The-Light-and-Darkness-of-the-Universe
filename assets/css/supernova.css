@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 
 .content h2 {
-    font-family: Beaufort Regular;
+    font-family: "Oswald", sans-serif;
     font-size: 2.75rem;
     margin-bottom: 1rem;
     letter-spacing: 2px;
@@ -57,7 +57,7 @@ nav ul li a:hover {
 }
 
 .content p {
-    font-family: Din Condensed Light;
+    font-family: 'DIN Condensed', sans-serif;
     font-size: 1.1rem;
     max-width: 600px;
     margin: auto;
