@@ -4,7 +4,7 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     background-color: #0c0f15;
-    background-image: url('../background2.jpg'); 
+    background-image: url('../media/background2.jpg'); 
     background-size: cover;
     background-attachment: fixed;
 }
@@ -36,7 +36,8 @@ nav ul li a:hover {
 }
 
 .content {
-    float: right;
+    margin-left: 40px;
+    float: left;
     text-align: center;
     padding: 3rem;
     color: #d3d3d3;
@@ -77,10 +78,10 @@ nav ul li a:hover {
 }
 
 .section-info {
+    color: white;
     display: flex;    
     margin-top: 2rem;
     font-size: 1.2rem;
-    color: #BBBBBB;
     letter-spacing: 1px;
 }
 main .content p {
@@ -91,24 +92,25 @@ main .content p {
 }
 
 .main-image img {
+    float:right;
     width: 450px;
-    margin-left: 150px;
+    margin-right: 150px;
     margin-top: 6rem;
     border-radius: 50%;
     opacity: 0.9;
 }
-
 .section-content {
     display: none;
 }
 
 /* Show only the targeted section when clicked */
-#history:target,
-#des:target,
-#ano:target {
+#supernova:target,
+#gamma:target,
+#anom:target {
     display: block;
 }
 
-.content-container:not(:has(:target)) > #history{
+.content-container:not(:has(:target)) > #supernova{
     display: block;
 }
+

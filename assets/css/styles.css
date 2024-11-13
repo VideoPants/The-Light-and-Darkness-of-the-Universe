@@ -4,7 +4,7 @@ body {
     padding: 0;
     color: white;
     background-color: #0c0f15;
-    background-image: url('../background.jpeg'); /* Add a cosmic background */  
+    background-image: url('../media/background2.jpg'); /* Add a cosmic background */  
     background-attachment: fixed;
     font-family: "Oswald", sans-serif;
     font-size: larger;
@@ -18,16 +18,16 @@ ul {
     padding: 1rem 0;
     background-color: rgba(12, 15, 21, 0.8); 
     margin: 0;
-    font-family: "Faculty Glyphic", sans-serif;
+    font-family: 'DIN Condensed', sans-serif;
 }
 
 li {
     margin: 0 2rem;
-    font-family: "Faculty Glyphic", sans-serif;
+    font-family: 'DIN Condensed', sans-serif;
 }
 
 a {
-    font-family: "Faculty Glyphic", sans-serif;
+    font-family: 'DIN Condensed', sans-serif;
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
@@ -93,7 +93,7 @@ main .content p {
 
 img {
     max-width: 90%;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 100px;
     padding: 75px;
     border-radius: 90px;
@@ -112,10 +112,10 @@ img {
 }
 
 /* Show only the targeted section when clicked */
-#mainseq:target, #giant:target, #white:target, #neutron:target {
+#traversable:target, #bridge:target, #lorentzian:target {
     display: block;
 }
 
-.content-container:not(:has(:target)) > #mainseq{
+.content-container:not(:has(:target)) > #traversable{
     display: block;
 }

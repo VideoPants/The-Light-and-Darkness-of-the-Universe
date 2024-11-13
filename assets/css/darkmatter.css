@@ -1,89 +1,88 @@
-/* Global Styles */
 body {
     margin: 0;
     padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     background-color: #0c0f15;
-    background-image: url('../background.jpeg'); /* Add a cosmic background */  
+    background-image: url('../media/background2.jpg'); 
+    background-size: cover;
     background-attachment: fixed;
-    font-family: "Oswald", sans-serif;
-    font-size: larger;
 }
 
-/* Navigation Bar */
-ul {
+nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 1rem 0;
     background-color: rgba(12, 15, 21, 0.8); 
     margin: 0;
-    font-family: "Faculty Glyphic", sans-serif;
 }
 
-li {
+nav ul li {
     margin: 0 2rem;
-    font-family: "Faculty Glyphic", sans-serif;
 }
 
-a {
-    font-family: "Faculty Glyphic", sans-serif;
+nav ul li a {
+    font-family: 'DIN Condensed', sans-serif;
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
     padding: 5px;
 }
 
-li a:hover {
+nav ul li a:hover {
     border-bottom: 3px solid white;
     transition: all 0.1s;
 }
 
-/* Page Layout */
 .content {
-    text-align: left;
+    float: right;
+    text-align: center;
     padding: 3rem;
     color: #d3d3d3;
-    float: right;
-    margin-top: 20px;
-    margin-right: 60px;
 }
 
 .content h2 {
-    font-size: 2.5rem;
+    font-family: Beaufort Regular;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
     letter-spacing: 2px;
     color: white;
+    text-align: left;
 }
 
 .content p {
+    font-family: Din Condensed Light;
     font-size: 1.1rem;
     max-width: 600px;
     margin: auto;
     line-height: 1.6;
-}
-
-/* Inner Navigation for Sections */
-.inner-navigation {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-weight: bold;
-    padding: 5px;
+    text-align: left;
 }
 
 .inner-navigation a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+    padding: 5px;
     border-radius: 5px;
 }
 
-/* Section-Specific Styles */
+.inner-navigation a:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
+}
+
 .section-info {
+    display: flex;    
     margin-top: 2rem;
     font-size: 1.2rem;
     color: #BBBBBB;
     letter-spacing: 1px;
 }
-/* Special Styling for the Homepage */
 main .content p {
     font-size: 1.2rem;
     max-width: 700px;
@@ -91,31 +90,25 @@ main .content p {
     line-height: 1.8;
 }
 
-img {
-    max-width: 90%;
-    margin-top: 30px;
-    margin-left: 100px;
-    padding: 75px;
-    border-radius: 90px;
-    vertical-align:super;
+.main-image img {
+    width: 450px;
+    margin-left: 150px;
+    margin-top: 6rem;
+    border-radius: 50%;
+    opacity: 0.9;
 }
 
-.inner-navigation a:hover {
-    color: black; /* White color on hover */
-    background-color: white;
-    transition: all 0.5s;
-}
-
-/* Hide all sections by default */
-.text-container {
+.section-content {
     display: none;
 }
 
 /* Show only the targeted section when clicked */
-#traversable:target, #bridge:target, #lorentzian:target {
+#history:target,
+#des:target,
+#ano:target {
     display: block;
 }
 
-.content-container:not(:has(:target)) > #traversable{
+.content-container:not(:has(:target)) > #history{
     display: block;
 }
