@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #0c0f15;
+    background-image: url('../background.jpeg'); /* Add a cosmic background */  
+    background-attachment: fixed;
+    font-family: "Oswald", sans-serif;
+    font-size: larger;
+}
+
+/* Navigation Bar */
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem 0;
+    background-color: rgba(12, 15, 21, 0.8); 
+    margin: 0;
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+li {
+    margin: 0 2rem;
+    font-family: "Faculty Glyphic", sans-serif;
+}
+
+a {
+    font-family: "Faculty Glyphic", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+li a:hover {
+    border-bottom: 3px solid white;
+    transition: all 0.1s;
+}
+
+/* Page Layout */
+.content {
+    text-align: left;
+    padding: 3rem;
+    color: #d3d3d3;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Inner Navigation for Sections */
+.inner-navigation {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.inner-navigation a {
+    border-radius: 5px;
+}
+
+/* Section-Specific Styles */
+.section-info {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #BBBBBB;
+    letter-spacing: 1px;
+}
+/* Special Styling for the Homepage */
+main .content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 90%;
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 75px;
+    border-radius: 90px;
+    vertical-align:super;
+}
+
+.inner-navigation a:hover {
+    color: black; /* White color on hover */
+    background-color: white;
+    transition: all 0.5s;
+}
+
+/* Hide all sections by default */
+.text-container {
+    display: none;
+}
+
+/* Show only the targeted section when clicked */
+#traversable:target, #bridge:target, #lorentzian:target {
+    display: block;
+}
+
+.content-container:not(:has(:target)) > #traversable{
+    display: block;
+}
