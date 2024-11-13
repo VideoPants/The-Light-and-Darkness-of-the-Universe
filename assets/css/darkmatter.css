@@ -46,6 +46,10 @@ nav ul li a:hover {
     color: #d3d3d3;
 }
 
+h2, h3 {
+    font-family: "Oswald", sans-serif;
+}
+
 .content h2 {
     font-family: "Oswald", sans-serif;
     font-size: 2.75rem;
