@@ -5,6 +5,7 @@ body {
     color: white;
     background-color: #0c0f15;
     background-image: url('../media/background2.jpg'); /* Add a cosmic background */  
+    background-size: cover;
     background-attachment: fixed;
     font-family: "Oswald", sans-serif;
     font-size: larger;
