@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SpaceFrame</title>
+
     <style>
         * {
             margin: 0;
@@ -24,14 +26,14 @@
             position: relative;
             width: 100%;
             height: 100vh;
-            background-image: url('./offback.jpg');
+            background-image: url('./assets/media/offback.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-blend-mode: darken;
         }
 
         .header {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -55,7 +57,7 @@
         }
 
         footer{
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
             width: 100%;
             padding: 50px;
             color: white;
@@ -110,8 +112,7 @@
             transition: all 0.3s ease;
         }
 
-        .tabs a.active,
-        .tabs a:focus {
+        .tabs a.active, .tabs a:focus {
             border-color: #00ffcc;
         }
 
@@ -256,27 +257,49 @@
             display: block;
         }
 
+        .nextHamburg {
+            margin-right: 40px;
+        }
     </style>
+    
+    <link rel="stylesheet" href="./assets/css/hamburgericon.css">
 </head>
 
 <body>
     <div class="background">
         <div class="header">
             <a href="#" style="font-size: 20px; font-weight: bold;">SPACEFRAME</a>
-            <nav>
+
+            <nav class="hBar">
                 <a href="#">Home</a>
                 <a href="#">Stars</a>
                 <a href="#">Supernovas</a>
                 <a href="#">Wormholes</a>
                 <a href="#">Dark Matter & Energy</a>
-                <a href="#">References </a>
+                <a href="#" class="nextHamburg">References</a>
+            </nav>
+
+            <!--Hamburger Icon-->
+            <nav class="hamburger-menu">
+                <input type="checkbox" class="toggle-menu" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                        <ul class="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
             </nav>
         </div>
+
         <div class="content">
             <h1>SPACEFRAME</h1>
+
             <h2>LIGHT AND DARKNESS OF THE UNIVERSE:<br> A JOURNEY THROUGH COSMIC ANOMALIES</h2>
         </div>
     </div>
+
     <div class="tabs">
         <a href="#overview">Overview</a>
         <a href="#collection">Collection</a>
@@ -288,19 +311,28 @@
         <!-- Default Overview Section -->
         <div id="overview" class="section-content">
             <h2 style="text-align: center; color:#00ffcc;">What is SpaceFrame?</h2>
+
             <br><br>
+
             <p style="text-align: center;">SpaceFrame is a captivating platform that frames the mysteries of the cosmos, offering insights into the universe's most profound phenomena, including dark matter, supernovas, and wormholes. Designed as a gateway to the celestial unknown, it combines scientific depth with an awe-inspiring visual journey through the cosmos.</p>
+            
             <br><br><br><br>
+            
             <div class="video-container">    
                 <video controls>
                     <source src="video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <br><br><br>   
+
+            <br><br><br>
+
             <h2 style = "text-align: center; color: #00ffcc;">Purpose</h2>
+
             <br>
+
             <p style="text-align: center;">The goal of SpaceFrame is to educate and inspire curiosity about the cosmos. By blending sophisticated scientific insights with visually stunning representations of space, SpaceFrame aims to make complex topics comprehensible and captivating for everyone.</p>
+            
             <br><br>
         </div>
 
@@ -335,9 +367,11 @@
         <!-- Partners Section -->
         <div id="partners" class="section-content">
             <h2>Who Produces and Supports SpaceFrame?</h2>
+
             <p>
                 SpaceFrame is produced by the students of Rochester Institute of Technology in Dubai, and is provided free of charge through support and subject matter expertise from the NASA’s Universe of Learning project, NASA’s Earth Observing System Project Science Office, NASA’s Hubble Space Telescope Project, and NASA’s James Webb Space Telescope Project.
             </p>
+
             <div class="partners-grid">
                 <div class="partner-item">
                     <p>
@@ -345,12 +379,14 @@
                         Passionate about computers, space, and physics, I am an enthusiastic individual with a deep curiosity for the wonders of the universe. With a solid background in Physics, Mathematics and Computer Science and a keen interest in exploring the realms of space and physics, I am eager to contribute my skills and knowledge to a dynamic team where innovation and exploration are valued.
                     </p>
                 </div>
+
                 <div class="partner-item">
                     <p>
                         <span style="color:#00ffcc; text-align: center;">Hasan Alam</span><br>
                         2nd year Computing and Information technology student at Rochester Institute of Technology. As a dedicated and detail-oriented beginner in computing, I am building a strong foundation in programming languages, web development, algorithms, data structures, and object-oriented programming. I have a growing passion for problem-solving and enjoy collaborating with others to tackle challenges and manage tasks efficiently.
                     </p>
                 </div>
+
                 <div class="partner-item">
                     <p> 
                         <span style="color:#00ffcc; text-align: center;">Yousef Al-Salman</span><br>
