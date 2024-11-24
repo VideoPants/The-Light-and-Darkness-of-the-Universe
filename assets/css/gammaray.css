@@ -187,8 +187,30 @@ button, a {
     margin-right: 40px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
     .hBar {
         display: none;
+    }
+
+    .content-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;   /* Center items horizontally */
+        text-align: center;    /* Ensure text is centered */
+    }
+
+    .additional-image-1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 130px;
+    }
+    
+    .additional-image-2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 180px;
+    }
+
+    .content-container p {
+        margin: 10px 0; /* Add spacing around text */
     }
 }

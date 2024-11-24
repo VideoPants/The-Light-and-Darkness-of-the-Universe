@@ -93,9 +93,3 @@ transform-origin: 0% 100%;
     border-left: 3px solid white;
     transition: all 0.2s;
 }
-
-@media (max-width: 768px) {
-    .hBar {
-        display: none;
-    }
-}
