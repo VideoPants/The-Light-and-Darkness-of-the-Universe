@@ -41,9 +41,9 @@ body {
     padding: 0px;
 }
 
-.header a:hover {
-    text-decoration: underline;
-    color: #00ffcc;
+.hBar a:hover {
+    border-bottom: 3px solid white;
+    transition: all 0.1s;
 }
 
 footer{
@@ -129,13 +129,11 @@ button, a {
     display: inline-block;
     padding: 10px 20px;
     border: 3px solid black;
-    border-radius: 10px;
     margin: 10px;
     font-size: 16px;
     text-decoration: none;
     cursor: pointer;
     color: white;
-    font-weight: bold;
 }
   
 #button1 {
