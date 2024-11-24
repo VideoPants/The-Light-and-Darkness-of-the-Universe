@@ -1,51 +1,69 @@
-/* Global Styles */
-body {
+* {
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: #0c0f15;
-    background-image: url('../media/background2.jpg'); /* Add a cosmic background */  
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: "Oswald", sans-serif;
-    font-size: larger;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-/* Navigation Bar */
-ul {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    overflow-x: hidden;
+}
+
+.images {
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    padding: 1rem 0;
-    background-color: rgba(12, 15, 21, 0.8); 
-    margin: 0;
-    font-family: 'DIN Condensed', sans-serif;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
 }
 
-li {
-    margin: 0 2rem;
-    font-family: 'DIN Condensed', sans-serif;
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
 }
 
-a {
-    font-family: 'DIN Condensed', sans-serif;
-    text-decoration: none;
+#circle1 {
+    background-image: url('https://via.placeholder.com/150/FF007F/FFFFFF?text=Image1');
+}
+
+#circle2 {
+    background-image: url('https://via.placeholder.com/150/7FFF00/FFFFFF?text=Image2');
+    width: 200px;
+    height: 200px;
+}
+
+#circle3 {
+    background-image: url('https://via.placeholder.com/150/007FFF/FFFFFF?text=Image3'); 
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
     color: white;
-    font-size: 1.25rem;
-    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
 }
 
-li a:hover {
-    border-bottom: 3px solid white;
-    transition: all 0.1s;
-}
-
-/* Page Layout */
 .content {
-    text-align: right;
+    text-align: center;
     padding: 3rem;
     color: #d3d3d3;
-    float: left;
     margin-top: 20px;
     margin-left: 50px;
 }
@@ -59,15 +77,11 @@ li a:hover {
 
 .content p {
     font-size: 1.1rem;
-    max-width: 600px;
     margin: auto;
     line-height: 1.6;
 }
-
-/* Inner Navigation for Sections */
+    
 .inner-navigation {
-    color: white;
-    text-decoration: none;
     margin: 10px;
     font-weight: bold;
     padding: 5px;
@@ -75,6 +89,8 @@ li a:hover {
 
 .inner-navigation a {
     border-radius: 5px;
+    color: white;
+    padding: 4px;
 }
 
 /* Section-Specific Styles */
@@ -84,6 +100,7 @@ li a:hover {
     color: #BBBBBB;
     letter-spacing: 1px;
 }
+
 /* Special Styling for the Homepage */
 main .content p {
     font-size: 1.2rem;
@@ -92,11 +109,13 @@ main .content p {
     line-height: 1.8;
 }
 
-iframe {
-    max-width: 90%;
-    margin-top: 30px;
-    padding: 75px;
-    vertical-align:super;
+.hBar a:hover {
+    border-bottom: 3px solid white;
+    transition: all 0.1s;
+}
+
+.nextHamburg {
+    margin-right: 40px;
 }
 
 .inner-navigation a:hover {
@@ -112,7 +131,7 @@ iframe {
 
 /* Show only the targeted section when clicked */
 #traversable:target, #bridge:target, #lorentzian:target {
-    display: block;
+    display: block; 
 }
 
 .content-container:not(:has(:target)) > #traversable{
