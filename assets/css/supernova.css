@@ -126,10 +126,8 @@ button, a {
     display: inline-block;
     padding: 10px 20px;
     border: 3px solid black;
-    margin: 10px;
     font-size: 16px;
     text-decoration: none;
-    cursor: pointer;
     color: white;
 }
 
@@ -185,3 +183,7 @@ button, a {
 #extra-content:target {
     display: block;
 } 
+
+.nextHamburg {
+    margin-right: 40px;
+}
