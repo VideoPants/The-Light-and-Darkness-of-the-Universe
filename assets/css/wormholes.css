@@ -29,17 +29,17 @@ body {
 }
 
 #circle1 {
-    background-image: url('https://via.placeholder.com/150/FF007F/FFFFFF?text=Image1');
+    background-image: url('https://t4.ftcdn.net/jpg/09/62/77/43/360_F_962774306_rEv8c56EArwu3lLx87q8tZontyfYhz3h.jpg');
 }
 
 #circle2 {
-    background-image: url('https://via.placeholder.com/150/7FFF00/FFFFFF?text=Image2');
+    background-image: url('https://img.freepik.com/premium-vector/tunnel-wormhole-abstract-wormhole-science-3d-tunnel-gridwireframe-3d-surface-tunnelgrid-texture_105800-132.jpg?semt=ais_hybrid');
     width: 200px;
     height: 200px;
 }
 
 #circle3 {
-    background-image: url('https://via.placeholder.com/150/007FFF/FFFFFF?text=Image3'); 
+    background-image: url('https://media.istockphoto.com/id/1498666644/photo/black-hole-clouds-high-quality-render.jpg?s=612x612&w=0&k=20&c=AjpX_Gh_HiImQ8OyP-RnstDV1imt4QiU1268jhmL9w4='); 
 }
 
 .header {
