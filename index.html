@@ -4,38 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpaceFrame</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <title>The Light and Darkness of the Universe</title>
-
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/hamburgericon.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html"><b>00</b>  Home</a></li> | 
-            <li><a href="stars.html"><b>01</b>  Stars</a></li> | 
-            <li><a href="wormholes.html"><b>02</b>  Wormholes</a></li> | 
-            <li><a href="darkmatter_energy.html"><b>03</b>  Dark Matter & Energy</a></li> | 
-            <li><a href="supernova_gamma.html"><b>04</b>  Supernova & Gamma Rays</a></li>
-        </ul>
-    </nav>
+    <div class="background">
+        <div class="header">
+            <a href="#" style="font-size: 20px; font-weight: bold;">SPACEFRAME</a>
 
-    <main>
-        <section class="content">
-            <h2>LIGHT AND DARKNESS OF THE UNIVERSE</h2>
+            <nav class="hBar">
+                <a href="./index.html">Home</a>
+                <a href="./stars.html">Stars</a>
+                <a href="./supernova_gamma.html">Supernovas</a>
+                <a href="./wormholes.html">Wormholes</a>
+                <a href="./darkmatter_energy.html">Dark Matter & Energy</a>
+                <a href="#" class="nextHamburg">References</a>
+            </nav>
 
-            <p>Welcome to a journey through the cosmic anomalies that define the balance of light and darkness in the universe. From the birth of stars to the mysterious depths of black holes, explore the enigmas that challenge our understanding of the cosmos.</p>
-            <p>Let’s dive into the universe’s most profound secrets — a realm where light meets darkness, and known meets the unknown.</p>
+            <!--Hamburger Icon-->
+            <nav class="hamburger-menu">
+                <input type="checkbox" class="toggle-menu" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="menu">
+                        <a href="./index.html">Home</a>
+                        <a href="./stars.html">Stars</a>
+                        <a href="./supernova_gamma.html">Supernovas</a>
+                        <a href="./wormholes.html">Wormholes</a>
+                        <a href="./darkmatter_energy.html">Dark Matter & Energy</a>
+                        <a href="#">References</a>
+                    </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>SPACEFRAME</h1>
+
+            <h2>LIGHT AND DARKNESS OF THE UNIVERSE:<br> A JOURNEY THROUGH COSMIC ANOMALIES</h2>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <a href="#overview">Overview</a>
+        <a href="#collection">Collection</a>
+        <a href="#partners">Partners</a>
+    </div>
+
+    <div class="content-container">
+
+        <!-- Default Overview Section -->
+        <div id="overview" class="section-content">
+            <h2 style="text-align: center; color:#00ffcc;">What is SpaceFrame?</h2>
+
+            <br><br>
+
+            <p style="text-align: center;">SpaceFrame is a captivating platform that frames the mysteries of the cosmos, offering insights into the universe's most profound phenomena, including dark matter, supernovas, and wormholes. Designed as a gateway to the celestial unknown, it combines scientific depth with an awe-inspiring visual journey through the cosmos.</p>
             
-            <div class="main-image">
-                <img src="assets/media/CircularObsevableUniverse.png" alt="Cosmic background image introducing the universe theme">
+            <br><br><br><br>
+            
+            <div class="video-container">    
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-        </section>
-    </main>
+
+            <br><br><br>
+
+            <h2 style = "text-align: center; color: #00ffcc;">Purpose</h2>
+
+            <br>
+
+            <p style="text-align: center;">The goal of SpaceFrame is to educate and inspire curiosity about the cosmos. By blending sophisticated scientific insights with visually stunning representations of space, SpaceFrame aims to make complex topics comprehensible and captivating for everyone.</p>
+            
+            <br><br>
+        </div>
+
+        <!-- Collection Section -->
+        <div id="collection" class="section-content">
+            <h2><span style="color:#00ffcc">What Will You Explore?</span></h2>
+
+            <div class="collections-grid">
+
+                <div class="collection-item">
+                    <img src="./assets/media/darkmatter.avif" alt="Astronomy and Astrophysics">
+                    <h3>Dark Matter & Energy: The universe's hidden forces.</h3>
+                </div>
+
+                <div class="collection-item">
+                    <img src="./assets/media/gammaray.webp" alt="Satellite Views of Earth">
+                    <h3>Supernovas & Gamma Rays: Explosive ends of stars.</h3>
+                </div>
+
+                <div class="collection-item">
+                    <img src="./assets/media/wormholes.jpg" alt="Science and Universe Work">
+                    <h3>Wormholes: Pathways through spacetime.</h3>
+                </div>
+
+                <div class="collection-item">
+                    <img src="./assets/media/stars.jpg" alt="Stunning Imagery">
+                    <h3>Stars & Their Anomalies: Cosmic wonders and oddities.</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Partners Section -->
+        <div id="partners" class="section-content">
+            <h2>Who Produces and Supports SpaceFrame?</h2>
+
+            <p>
+                SpaceFrame is produced by the students of Rochester Institute of Technology in Dubai, and is provided free of charge through support and subject matter expertise from the NASA’s Universe of Learning project, NASA’s Earth Observing System Project Science Office, NASA’s Hubble Space Telescope Project, and NASA’s James Webb Space Telescope Project.
+            </p>
+
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <p>
+                        <span style="color:#00ffcc; text-align: center;">Syed Ali Mustafa Wasti</span><br>
+                        Passionate about computers, space, and physics, I am an enthusiastic individual with a deep curiosity for the wonders of the universe. With a solid background in Physics, Mathematics and Computer Science and a keen interest in exploring the realms of space and physics, I am eager to contribute my skills and knowledge to a dynamic team where innovation and exploration are valued.
+                    </p>
+                </div>
+
+                <div class="partner-item">
+                    <p>
+                        <span style="color:#00ffcc; text-align: center;">Hasan Alam</span><br>
+                        2nd year Computing and Information technology student at Rochester Institute of Technology. As a dedicated and detail-oriented beginner in computing, I am building a strong foundation in programming languages, web development, algorithms, data structures, and object-oriented programming. I have a growing passion for problem-solving and enjoy collaborating with others to tackle challenges and manage tasks efficiently.
+                    </p>
+                </div>
+
+                <div class="partner-item">
+                    <p> 
+                        <span style="color:#00ffcc; text-align: center;">Yousef Al-Salman</span><br>
+                        A computer science bachelor student with a profound interest in the dynamic field of computer programming and development. Eager to create, improve and innovate, I am now seeking an opportunity to contribute my technical expertise and passion for programming to a forward-thinking team. Described by my colleagues as energetic, reliable, and a quick learner.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p style="text-align: center;">SpaceFrame content contains copyrighted material and should not be downloaded or used outside of this website.<br>&copy; ISTE-140-601 Group 4, All Rights Reserved</p>
+    </footer>
 </body>
+
 </html>
