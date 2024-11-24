@@ -130,3 +130,8 @@ footer {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .hBar {
+        display: none;
+    }
+}
