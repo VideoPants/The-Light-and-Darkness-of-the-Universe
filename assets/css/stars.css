@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    overflow-x: hidden;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin: 0px;
+}
+
+.circle {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+}
+
+
+#circle1 {
+    background-image: url('../media/WolfStar.jfif');
+}
+
+#circle2 {
+    background-image: url('../media/LightEchoStar.jfif');
+}
+
+#circle3 {
+    background-image: url('../media/starste.jpeg'); 
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    border: None;
+    padding: 0px;
+}
+
+.content {
+    text-align: center;
+    padding: 3rem;
+    color: #d3d3d3;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.content p {
+    font-size: 1.1rem;
+    margin: auto;
+    line-height: 1.6;
+}
+    
+.inner-navigation {
+    margin: 10px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.inner-navigation a {
+    border-radius: 5px;
+    color: white;
+    padding: 4px;
+}
+
+
+.section-info {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #BBBBBB;
+    letter-spacing: 1px;
+}
+
+
+main .content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    line-height: 1.8;
+}
+
+.hBar a:hover {
+    border-bottom: 3px solid rgb(246, 246, 246);
+    transition: all 0.1s;
+}
+
+.nextHamburg {
+    margin-right: 40px;
+}
+
+.inner-navigation a:hover {
+    color: black; 
+    background-color: rgb(178, 171, 133);
+    transition: all 0.5s;
+}
+
+
+.text-container {
+    display: none;
+}
+
+
+#traversable:target, #bridge:target, #lorentzian:target {
+    display: block; 
+}
+
+.content-container:not(:has(:target)) > #traversable{
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hBar {
+        display: none;
+    }
+}
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    
+}

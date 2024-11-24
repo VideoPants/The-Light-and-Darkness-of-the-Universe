@@ -1,0 +1,197 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #001a33, #000010);
+    color: white;
+}
+
+
+.background .stars, .stars2, .stars3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.stars {
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: moveStars 60s linear infinite;
+}
+
+.stars2 {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.8) 1px, transparent 1px);
+    background-size: 75px 75px;
+    animation: moveStars 90s linear infinite;
+    opacity: 0.6;
+}
+
+.stars3 {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+    background-size: 100px 100px;
+    animation: moveStars 120s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes moveStars {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-100px, -100px);
+    }
+}
+
+.star-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.star {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #fff, #88ccff, #004488, #000033);
+    border-radius: 50%;
+    box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.5), 0 0 100px 50px rgba(136, 204, 255, 0.3);
+    animation: spinStar 8s linear infinite, pulseStar 5s infinite ease-in-out;
+}
+
+
+.star.top-left {
+    top: 20px;
+    left: 20px;
+    animation-duration: 10s;
+}
+
+
+.star.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    animation-duration: 12s;
+    transform: scale(0.9);
+}
+
+
+.star.top-right {
+    top: 20px;
+    right: 20px;
+    animation-duration: 8s;
+    transform: scale(1.1);
+}
+
+
+.star.bottom-right {
+    bottom: 20px;
+    right: 20px;
+    animation-duration: 14s;
+    transform: scale(1);
+}
+
+
+@keyframes pulseStar {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.5), 0 0 100px 50px rgba(136, 204, 255, 0.3);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 70px 30px rgba(255, 255, 255, 0.7), 0 0 150px 70px rgba(136, 204, 255, 0.5);
+    }
+}
+
+
+.info-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #88ccff;
+    border-radius: 5px;
+    background: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.back-link:hover {
+    background: #88ccff;
+    color: #001a33;
+}
+
+
+.facts-panel {
+    position: absolute;
+    top: 50%;
+    left: -500px; /* Initially offscreen to the left */
+    transform: translateY(-50%);
+    width: 400px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.facts-panel h2 {
+    font-size: 1.8rem;
+    color: #88ccff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.facts-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.facts-panel li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+
+@keyframes slideInFromLeft {
+    from {
+        left: -500px;
+    }
+    to {
+        left: 20px;
+    }
+}
