@@ -41,9 +41,9 @@ body {
     margin-left: 20px;
 }
 
-.header a:hover {
-    text-decoration: underline;
-    color: #00ffcc;
+.hBar a:hover {
+    border-bottom: 3px solid white;
+    transition: all 0.1s;
 }
 
 footer{
