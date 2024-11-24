@@ -119,16 +119,24 @@ body {
 
 #circle1 {
     background-image: url('https://t4.ftcdn.net/jpg/09/62/77/43/360_F_962774306_rEv8c56EArwu3lLx87q8tZontyfYhz3h.jpg');
+    width: 250px;
+    height: 250px;
+    margin-bottom: 100px;
+    margin-right: 100px;
 }
 
 #circle2 {
     background-image: url('https://img.freepik.com/premium-vector/tunnel-wormhole-abstract-wormhole-science-3d-tunnel-gridwireframe-3d-surface-tunnelgrid-texture_105800-132.jpg?semt=ais_hybrid');
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 #circle3 {
     background-image: url('https://media.istockphoto.com/id/1498666644/photo/black-hole-clouds-high-quality-render.jpg?s=612x612&w=0&k=20&c=AjpX_Gh_HiImQ8OyP-RnstDV1imt4QiU1268jhmL9w4=');
+    width: 250px;
+    height: 250px;
+    margin-bottom: 100px;
+    margin-left: 100px;
 }
 
 .hBar a:hover {
@@ -160,6 +168,14 @@ body {
     display: block;
 }
 
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+    
 @media (max-width: 768px) {
     .hBar {
         display: none;
