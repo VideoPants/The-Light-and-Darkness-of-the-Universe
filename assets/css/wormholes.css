@@ -139,3 +139,9 @@ main .content p {
 .content-container:not(:has(:target)) > #traversable{
     display: block;
 }
+
+@media (max-width: 768px) {
+    .hBar {
+        display: none;
+    }
+}

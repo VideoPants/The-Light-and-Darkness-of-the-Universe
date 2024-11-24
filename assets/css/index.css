@@ -250,3 +250,9 @@ footer{
 .nextHamburg {
     margin-right: 40px;
 }
+
+@media (max-width: 768px) {
+    .hBar {
+        display: none;
+    }
+}
